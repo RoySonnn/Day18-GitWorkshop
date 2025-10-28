@@ -5,3 +5,16 @@ body {
 h1 {
   color: white;
 }
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 95, 155);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 100%;
+  margin: 50px auto;
+}
