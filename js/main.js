@@ -1,18 +1,18 @@
 'use strict'
 
-function onBallBlick() {
-    var ball = document.querySelector('.ball')
-    var currSize = parseInt(ball.style.width)
+function onBallBlick(elBall) {
+    // var ball = document.querySelector('.ball1')
+    var currSize = parseInt(elBall.style.width)
 
     if (isNaN(currSize)) currSize = 100
      var sizeChange = getRandomInt(20, 60)
 
     currSize += sizeChange
     if (currSize > 400) currSize = 100
-    ball.style.width = currSize + 'px'
-    ball.style.height = currSize + 'px'
+    elBall.style.width = currSize + 'px'
+    elBall.style.height = currSize + 'px'
 
-    ball.textContent = currSize
+    elBall.textContent = currSize
 
-    ball.style.backgroundColor = getRandomColor()
+    elBall.style.backgroundColor = getRandomColor()
 }

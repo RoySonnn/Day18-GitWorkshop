@@ -4,12 +4,22 @@ body {
 
 h1 {
   color: white;
+  text-align: center;
 }
 
-.ball {
+.balls-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  gap: 50px;            
+  margin-top: 50px;
+}
+
+
+.ball1,
+.ball2 {
   width: 100px;
   height: 100px;
-  background-color: rgb(0, 95, 155);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -19,4 +29,12 @@ h1 {
   font-weight: bold;
   margin: 50px auto;
   transition: 1s;
+}
+
+.ball1 {
+  background-color: rgb(0, 95, 155);
+}
+
+.ball2 {
+  background-color: rgb(114, 0, 78);
 }
