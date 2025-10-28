@@ -13,4 +13,6 @@ function onBallBlick() {
     ball.style.height = currSize + 'px'
 
     ball.textContent = currSize
+
+    ball.style.backgroundColor = getRandomColor()
 }
