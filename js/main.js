@@ -7,6 +7,7 @@ function onBallBlick() {
     if (isNaN(currSize)) currSize = 100
 
     currSize += 50
+    if (currSize > 400) currSize = 100
     ball.style.width = currSize + 'px'
     ball.style.height = currSize + 'px'
 
